@@ -7,5 +7,6 @@ exports.show_all_books_status = async function (res) {
   results = results.map(
     (bookInstance) => bookInstance.book.title + " : " + bookInstance.status
   );
+  console.log(results);
   return res.send(results);
 };
